@@ -1,1 +1,3 @@
-# bus-services-react
+# Installation
+npm install
+npm start

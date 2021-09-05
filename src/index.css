@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Login Page */
+.page-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.login-wrapper {
+  width: 200px;
+}
+
+.login-header {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 230px;
+}
+
+.login-form > div {
+  margin-bottom: 10px;
+}
+
+.login-error {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  width: 230px;
+}
+
+.login-form input {
+  padding: 10px 15px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.login-form .submit-btn {
+  background: rgb(27 195 249);
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  border: none;
+  border-radius: 3px;
+  margin-top: 20px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.login-form .submit-btn.disabled {
+  pointer-events: none;
+  background: lightgray;
+}
+
+.login-form .submit-btn:hover {
+  background: rgb(27 195 249 / 80%);
+}
+
+/* Home Page */
+.home-page {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.home-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  width: 80%;
+}
+
+.search-wrapper {
+  flex: 30%;
+}
+
+.search-wrapper .search-header {
+  padding: 0 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.search-wrapper .search-form {
+  padding: 0 15px;
+}
+
+.search-wrapper .search-form input {
+  padding: 10px 15px;
+}
+
+.search-wrapper .search-form .search-btn,
+.search-wrapper .search-form .logout-btn
+{
+  background: rgb(27 195 249);
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  border: none;
+  border-radius: 3px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.search-wrapper .search-form .logout-btn {
+  background: rgb(249 27 27);
+}
+
+.search-wrapper .search-form .logout-btn:hover {
+  background: rgb(249 27 27 / 80%);
+}
+
+.search-wrapper .search-form .search-btn:hover,
+.search-wrapper .search-form .add-bus-btn:hover {
+  background: rgb(27 195 249 / 80%);
+}
+
+.results-wrapper {
+  flex: 70%;
+}
+
+.results-wrapper .result-list {
+  border: 1px solid lightgray;
+  height: 300px;
+  border-radius: 3px;
+  padding: 20px;
+  overflow: auto;
+}
+
+.result-item {
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  background: lightyellow;
+  padding: 20px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.result-item .item-info {
+  margin-bottom: 10px;
+}
+
+.result-item .bus-info {
+  margin-bottom: 10px;
+}
+
+.result-item .item-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.result-item .add-bus-btn {
+  background: rgb(27 195 249);
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  float: right;
+}
+
+.result-item .bus-list-header {
+  font-weight: 700;
+}
+
+/* Add Location Page */
+.add-wrapper .form-header {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.add-wrapper .form-fields {
+  font-size: 14px;
+}
+
+.add-wrapper .form-error {
+  margin-top: 15px;
+  color: red;
+  width: 100%;
+  text-align: center;
+}
+
+.form-fields .location-name {
+  margin-bottom: 10px;
+}
+
+.form-fields .location-number input {
+  padding: 10px 15px;
+  width: 300px;
+}
+
+.form-fields .submit-btn {
+  background: rgb(27 195 249);
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  border: none;
+  border-radius: 3px;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 300px;
+}
